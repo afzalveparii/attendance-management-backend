@@ -131,4 +131,3 @@ To import the `attendancesDummyData.json` file into MongoDB for testing the API,
 6. Ensure the `File Type` is set to `JSON` and click `Import`.
 
 This will import the dummy data into the `attendances` collection in the `attendanceDB` database.
-````
