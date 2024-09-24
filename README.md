@@ -58,7 +58,7 @@ To run the project:
 npm start
 ```
 
-##📝 API Endpoints
+## 📝 API Endpoints
 - 1. Real-Time Insight ⏰
 Endpoint: /api/realtime-insight
 Method: GET
