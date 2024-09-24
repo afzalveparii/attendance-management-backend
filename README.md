@@ -72,3 +72,40 @@ Response Example:
 ```
 
 2. Attendance Comparison Chart 📈
+Endpoint: /api/attendance-comparison-chart
+Method: GET
+Description: Fetches attendance comparison chart data based on selected criteria.
+Request Parameters:
+- startDate: string (required) - Start date for the comparison.
+- endDate: string (required) - End date for the comparison.
+- department: string (optional) - Department for comparison.
+- employeeId: string (optional) - Employee ID for comparison.
+Response Example:
+```
+{
+    "message": "Attendance data fetched",
+    "data": [
+        { "_id": 1, "attendanceRate": 0.9 },
+        { "_id": 2, "attendanceRate": 0.85 }
+    ]
+}
+```
+
+<h2> 3. 📊 Attendance Overview 👥</h2>
+Endpoint: /api/attendance-overview
+Method: GET
+Description: Fetches attendance overview data for the selected date range.
+Request Parameters:
+- date: string (required) - Date for the overview.
+- department: string (optional) - Department for the overview.
+- status: string (optional) - Status for the overview.
+
+Response Example:
+```
+{
+  "message": "Attendance overview fetched",
+   "data": [
+        { "employeeId": "2341421", "employeeName": "Ahmed Rashdan", "role": "Help Desk Executive", "department": "IT", "date": "2024-08-01", "status": "Present" }
+    ]
+}
+```
