@@ -108,3 +108,27 @@ npm start
     ]
 }
 ```
+## 📥 Importing Dummy Data
+
+To import the `attendancesDummyData.json` file into MongoDB for testing the API, follow these steps:
+
+### 📚 Using `mongoimport` Tool
+
+1. Ensure MongoDB is running on your local machine or the specified `MONGO_URI`.
+2. Use the `mongoimport` tool to import the data:
+   ```bash
+   mongoimport --uri "mongodb://localhost:27017/attendanceDB" --collection attendances --file data/attendancesDummyData.json --jsonArray
+   ```
+   Adjust the `--uri` parameter if your MongoDB instance is running on a different URI.
+
+### 📚 Using MongoDB Compass
+
+1. Open MongoDB Compass and connect to your MongoDB instance.
+2. Navigate to the `attendanceDB` database. If it doesn't exist, create it.
+3. Click on the `attendances` collection. If it doesn't exist, create it.
+4. Click on the `Add Data` button and select `Import File`.
+5. Choose the `attendancesDummyData.json` file from your file system.
+6. Ensure the `File Type` is set to `JSON` and click `Import`.
+
+This will import the dummy data into the `attendances` collection in the `attendanceDB` database.
+````

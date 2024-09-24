@@ -2,8 +2,28 @@ import Attendance from '../models/attendanceModel.js';
 
 // 1. Real-Time Insight API
 export const getRealTimeInsight = (req, res) => {
+try {
   const currentTime = new Date().toLocaleTimeString();
-  res.status(200).json({ message: 'Real-time insight fetched', time: currentTime });
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.toLocaleString('default', { month: 'long' });
+  const year = currentDate.getFullYear();
+
+  const getOrdinalSuffix = (day) => {
+    if (day > 3 && day < 21) return 'th';
+    switch (day % 10) {
+      case 1: return 'st';
+      case 2: return 'nd';
+      case 3: return 'rd';
+      default: return 'th';
+    }
+  };
+
+  const formattedDate = `${day}${getOrdinalSuffix(day)}, ${month}, ${year}`;
+    res.status(200).json({ message: 'Real-time insight fetched', time: currentTime, date: formattedDate });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 };
 
 // 2. Attendance Comparison Chart API
@@ -30,18 +50,117 @@ export const getAttendanceComparisonChart = async (req, res) => {
 };
 
 // 3. Attendance Overview API
+// export const getAttendanceOverview = async (req, res) => {
+//   try {
+//     const { date, department, status } = req.query;
+//     if(!date) {
+//       return res.status(400).json({ message: 'Date is required' });
+//     }
+//     if (date) {
+//         const parsedDate = new Date(Date.parse(date));
+//         if (isNaN(parsedDate)) {
+//           return res.status(400).json({ message: 'Invalid date format' });
+//         }
+//         filters.date = parsedDate;
+//       }
+//       if (department) filters.department = department;
+//       if (status) filters.status = status;
+      
+//       const attendanceOverview = await Attendance.find(filters).select('-__v'); // Excluding __v for optimized response
+//       res.status(200).json({ message: 'Attendance overview fetched', data: attendanceOverview });
+//     } catch (error) {
+//       res.status(500).json({ message: error.message });
+//     }
+//   };
+
+// Attendance Overview API with date filtering, pagination, and query handling
+// export const getAttendanceOverview = async (req, res) => {
+//   try {
+//     const { date, department, status, page = 1, limit = 10 } = req.query;
+//     const filters = {};
+
+//     if (!date) {
+//       return res.status(400).json({ message: 'Date is required' });
+//     }
+
+//     const parsedDate = new Date(Date.parse(date));
+//     if (isNaN(parsedDate)) {
+//       return res.status(400).json({ message: 'Invalid date format' });
+//     }
+//     filters.date = parsedDate;
+//     if (department) filters.department = department;
+//     if (status) filters.status = status;
+
+//     const skip = (page - 1) * limit;
+
+//     const attendanceOverview = await Attendance.find(filters)
+//       .select('-__v')
+//       .skip(skip)
+//       .limit(parseInt(limit));
+//     const totalRecords = await Attendance.countDocuments(filters);
+//     const totalPages = Math.ceil(totalRecords / limit);
+
+//     res.status(200).json({
+//       message: 'Attendance overview fetched',
+//       data: attendanceOverview,
+//       pagination: {
+//         totalRecords,
+//         totalPages,
+//         currentPage: parseInt(page),
+//         pageSize: parseInt(limit)
+//       }
+//     });
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// };
 export const getAttendanceOverview = async (req, res) => {
-  try {
-    const { date, department, status } = req.query;
+    try {
+        const { date, department, status, search, page = 1, limit = 10 } = req.query;
+        let query = {};
+        if (!date) {
+          return res.status(400).json({ message: 'Date is required' });
+        }
     
-    const filters = {};
-    if (date) filters.date = new Date(date);
-    if (department) filters.department = department;
-    if (status) filters.status = status;
+        if (date) {
+          const parsedDate = new Date(date);
+          if (isNaN(parsedDate)) {
+            return res.status(400).json({ message: 'Invalid date format' });
+          }
+          query.date = parsedDate;
+        }
+        if (department) query.department = department;
+        if (status) query.status = status;
+        if (search) {
+          query.$or = [
+            { employeeName: { $regex: search, $options: 'i' } },
+            { employeeId: { $regex: search, $options: 'i' } },
+          ];
+        }
     
-    const attendanceOverview = await Attendance.find(filters).select('-__v'); // Excluding __v for optimized response
-    res.status(200).json({ message: 'Attendance overview fetched', data: attendanceOverview });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
+        const options = {
+          page: parseInt(page),
+          limit: parseInt(limit),
+          sort: { date: -1 }
+        };
+    
+        const result = await Attendance.paginate(query, options);
+        
+        if (result.docs.length === 0) {
+          return res.status(404).json({ message: 'Data not found for the given date' });
+        }
+    
+        res.status(200).json({
+          message: 'Attendance overview fetched',
+          data: result.docs,
+          pagination: {
+            totalRecords: result.totalDocs,
+            totalPages: result.totalPages,
+            currentPage: result.page,
+            pageSize: result.limit
+          }
+        });
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
 };

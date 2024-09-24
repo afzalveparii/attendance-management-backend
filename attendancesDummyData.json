@@ -1,0 +1,650 @@
+[{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb02"
+  },
+  "employeeId": "E001",
+  "employeeName": "John Doe",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-01T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb03"
+  },
+  "employeeId": "E002",
+  "employeeName": "Jane Smith",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-01T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb04"
+  },
+  "employeeId": "E003",
+  "employeeName": "Alice Johnson",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-02T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb05"
+  },
+  "employeeId": "E004",
+  "employeeName": "Bob Brown",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-02T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb06"
+  },
+  "employeeId": "E005",
+  "employeeName": "Charlie Davis",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-03T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb07"
+  },
+  "employeeId": "E006",
+  "employeeName": "Diana Evans",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-03T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb08"
+  },
+  "employeeId": "E007",
+  "employeeName": "Ethan Foster",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-04T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb09"
+  },
+  "employeeId": "E008",
+  "employeeName": "Fiona Green",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-04T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0a"
+  },
+  "employeeId": "E009",
+  "employeeName": "George Harris",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-05T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0b"
+  },
+  "employeeId": "E010",
+  "employeeName": "Hannah Irving",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-05T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0c"
+  },
+  "employeeId": "E011",
+  "employeeName": "Ian Jackson",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-06T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0d"
+  },
+  "employeeId": "E012",
+  "employeeName": "Julia King",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-06T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0e"
+  },
+  "employeeId": "E013",
+  "employeeName": "Kevin Lewis",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-07T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb0f"
+  },
+  "employeeId": "E014",
+  "employeeName": "Laura Miller",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-07T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb10"
+  },
+  "employeeId": "E015",
+  "employeeName": "Michael Nelson",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-08T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb11"
+  },
+  "employeeId": "E016",
+  "employeeName": "Nina Owens",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-08T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb12"
+  },
+  "employeeId": "E017",
+  "employeeName": "Oscar Perez",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-09T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb13"
+  },
+  "employeeId": "E018",
+  "employeeName": "Paula Quinn",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-09T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb14"
+  },
+  "employeeId": "E019",
+  "employeeName": "Quincy Roberts",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-10T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29705ce2efaeea3dbfb15"
+  },
+  "employeeId": "E020",
+  "employeeName": "Rachel Scott",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-10T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb16"
+  },
+  "employeeId": "E001",
+  "employeeName": "Amit Sharma",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-01T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb17"
+  },
+  "employeeId": "E002",
+  "employeeName": "Rohit Verma",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-01T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb18"
+  },
+  "employeeId": "E003",
+  "employeeName": "Priya Singh",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-02T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb19"
+  },
+  "employeeId": "E004",
+  "employeeName": "Suman Gupta",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-02T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1a"
+  },
+  "employeeId": "E005",
+  "employeeName": "Anjali Mehta",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-03T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1b"
+  },
+  "employeeId": "E006",
+  "employeeName": "Vikram Patel",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-03T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1c"
+  },
+  "employeeId": "E007",
+  "employeeName": "Neha Reddy",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-04T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1d"
+  },
+  "employeeId": "E008",
+  "employeeName": "Arjun Nair",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-04T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1e"
+  },
+  "employeeId": "E009",
+  "employeeName": "Kavita Rao",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-05T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb1f"
+  },
+  "employeeId": "E010",
+  "employeeName": "Ravi Kumar",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-05T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb20"
+  },
+  "employeeId": "E011",
+  "employeeName": "Amit Sharma",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-06T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb21"
+  },
+  "employeeId": "E012",
+  "employeeName": "Rohit Verma",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-06T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb22"
+  },
+  "employeeId": "E013",
+  "employeeName": "Priya Singh",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-07T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb23"
+  },
+  "employeeId": "E014",
+  "employeeName": "Suman Gupta",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-07T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb24"
+  },
+  "employeeId": "E015",
+  "employeeName": "Anjali Mehta",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-08T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb25"
+  },
+  "employeeId": "E016",
+  "employeeName": "Vikram Patel",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-08T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb26"
+  },
+  "employeeId": "E017",
+  "employeeName": "Neha Reddy",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-09T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb27"
+  },
+  "employeeId": "E018",
+  "employeeName": "Arjun Nair",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-09T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb28"
+  },
+  "employeeId": "E019",
+  "employeeName": "Kavita Rao",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-10T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb29"
+  },
+  "employeeId": "E020",
+  "employeeName": "Ravi Kumar",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-10T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2a"
+  },
+  "employeeId": "E021",
+  "employeeName": "Amit Sharma",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-11T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2b"
+  },
+  "employeeId": "E022",
+  "employeeName": "Rohit Verma",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-11T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2c"
+  },
+  "employeeId": "E023",
+  "employeeName": "Priya Singh",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-12T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2d"
+  },
+  "employeeId": "E024",
+  "employeeName": "Suman Gupta",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-12T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2e"
+  },
+  "employeeId": "E025",
+  "employeeName": "Anjali Mehta",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-13T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb2f"
+  },
+  "employeeId": "E026",
+  "employeeName": "Vikram Patel",
+  "role": "Manager",
+  "department": "HR",
+  "date": {
+    "$date": "2024-08-13T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb30"
+  },
+  "employeeId": "E027",
+  "employeeName": "Neha Reddy",
+  "role": "Analyst",
+  "department": "Finance",
+  "date": {
+    "$date": "2024-08-14T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb31"
+  },
+  "employeeId": "E028",
+  "employeeName": "Arjun Nair",
+  "role": "Developer",
+  "department": "IT",
+  "date": {
+    "$date": "2024-08-14T00:00:00.000Z"
+  },
+  "status": "On Leave"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb32"
+  },
+  "employeeId": "E029",
+  "employeeName": "Kavita Rao",
+  "role": "Designer",
+  "department": "Marketing",
+  "date": {
+    "$date": "2024-08-15T00:00:00.000Z"
+  },
+  "status": "Present"
+},
+{
+  "_id": {
+    "$oid": "66f29845ce2efaeea3dbfb33"
+  },
+  "employeeId": "E030",
+  "employeeName": "Ravi Kumar",
+  "role": "Support",
+  "department": "Customer Service",
+  "date": {
+    "$date": "2024-08-15T00:00:00.000Z"
+  },
+  "status": "Present"
+}]
