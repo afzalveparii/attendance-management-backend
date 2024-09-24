@@ -91,16 +91,15 @@ npm start
 }
 ```
 
--3. 📊 Attendance Overview 👥
-Endpoint: /api/attendance-overview
-Method: GET
-Description: Fetches attendance overview data for the selected date range.
-Request Parameters:
-- date: string (required) - Date for the overview.
-- department: string (optional) - Department for the overview.
-- status: string (optional) - Status for the overview.
-
-Response Example:
+- Attendance Overview 👥
+    - Endpoint: /api/attendance-overview
+    - Method: GET
+    - Description: Fetches attendance overview data for the selected date range.
+    - Request Parameters:
+        - date: string (required) - Date for the overview.
+        - department: string (optional) - Department for the overview.
+        - status: string (optional) - Status for the overview.
+    - Response Example:
 ```
 {
   "message": "Attendance overview fetched",
