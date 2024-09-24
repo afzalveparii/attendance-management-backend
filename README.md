@@ -63,7 +63,7 @@ npm start
     - Endpoint: /api/realtime-insight
     - Method: GET
     - Description: Fetches real-time system time for attendance insights.
-Response Example:
+    - Response Example:
 ```
 {
   "message": "Real-time insight fetched",
@@ -71,16 +71,16 @@ Response Example:
 }
 ```
 
-- 2. Attendance Comparison Chart 📈
-Endpoint: /api/attendance-comparison-chart
-Method: GET
-Description: Fetches attendance comparison chart data based on selected criteria.
-Request Parameters:
-- startDate: string (required) - Start date for the comparison.
-- endDate: string (required) - End date for the comparison.
-- department: string (optional) - Department for comparison.
-- employeeId: string (optional) - Employee ID for comparison.
-Response Example:
+- Attendance Comparison Chart 📈
+    - Endpoint: /api/attendance-comparison-chart
+    - Method: GET
+    - Description: Fetches attendance comparison chart data based on selected criteria.
+    - Request Parameters:
+        - startDate: string (required) - Start date for the comparison.
+        - endDate: string (required) - End date for the comparison.
+        - department: string (optional) - Department for comparison.
+        - employeeId: string (optional) - Employee ID for comparison.
+    - Response Example:
 ```
 {
     "message": "Attendance data fetched",
