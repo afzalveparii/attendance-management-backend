@@ -59,10 +59,10 @@ npm start
 ```
 
 ## 📝 API Endpoints
-- 1. Real-Time Insight ⏰
-Endpoint: /api/realtime-insight
-Method: GET
-Description: Fetches real-time system time for attendance insights.
+- Real-Time Insight ⏰:
+    - Endpoint: /api/realtime-insight
+    - Method: GET
+    - Description: Fetches real-time system time for attendance insights.
 Response Example:
 ```
 {
