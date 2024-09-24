@@ -1,4 +1,4 @@
-# Attendance Management Backend (HRM Project)
+# 🚀 Attendance Management Backend (HRM Project)
 
 This project is a backend system built with Node.js, Express.js, and MongoDB for managing attendance data as part of the HRM (Human Resource Management) system. It includes APIs for:
 
@@ -6,7 +6,7 @@ This project is a backend system built with Node.js, Express.js, and MongoDB for
 - Attendance Comparison Chart 📊
 - Attendance Overview 👥
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Node.js (v14 or later)
 - Express.js (v4)
@@ -14,7 +14,7 @@ This project is a backend system built with Node.js, Express.js, and MongoDB for
 - Mongoose (ODM for MongoDB)
 - ES6 Modules (import/export)
 
-## Project Structure
+## 📁 Project Structure
 
 - `app.js`: The main application file that sets up the Express.js server and connects to the database.
 - `routes/attendance.js`: Defines the routes for the attendance management system.
@@ -23,7 +23,7 @@ This project is a backend system built with Node.js, Express.js, and MongoDB for
 - `utils/attendanceUtils.js`: Utility functions for attendance calculations.
 - `config/db.js`: Configuration for the MongoDB connection.
 
-📦 Installation
+## 📦 Installation
 
 1. Clone the repository:
    ```
@@ -41,7 +41,7 @@ This project is a backend system built with Node.js, Express.js, and MongoDB for
    ```
    Adjust the `PORT` and `MONGO_URI` as needed.
 
-## Usage
+## 🚀 Usage
 
 To start the server in development mode:
 ```
@@ -58,8 +58,8 @@ To run the project:
 npm start
 ```
 
-📝 API Endpoints
-1. Real-Time Insight ⏰
+##📝 API Endpoints
+- 1. Real-Time Insight ⏰
 Endpoint: /api/realtime-insight
 Method: GET
 Description: Fetches real-time system time for attendance insights.
@@ -71,7 +71,7 @@ Response Example:
 }
 ```
 
-2. Attendance Comparison Chart 📈
+- 2. Attendance Comparison Chart 📈
 Endpoint: /api/attendance-comparison-chart
 Method: GET
 Description: Fetches attendance comparison chart data based on selected criteria.
@@ -91,7 +91,7 @@ Response Example:
 }
 ```
 
-<h2> 3. 📊 Attendance Overview 👥</h2>
+-3. 📊 Attendance Overview 👥
 Endpoint: /api/attendance-overview
 Method: GET
 Description: Fetches attendance overview data for the selected date range.
